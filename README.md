@@ -35,8 +35,6 @@ python simulacion_as_is.py
 python simulacion_to_be.py
 ```
 
-Ambos scripts leen el dataset desde `../datos/` y guardan sus resultados en `../resultados/`.
-
 ## Fuente de datos
 
 Bangs, D. (2021). *Call Centre Queue Simulation* [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/donovanbangs/call-centre-queue-simulation
