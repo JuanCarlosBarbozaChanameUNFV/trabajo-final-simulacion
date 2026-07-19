@@ -58,6 +58,7 @@ def simular_call_center(lam, mu, n_agentes, n_llamadas, semilla):
     tiempos_servicio = np.random.exponential(scale=1 / mu, size=n_llamadas)
     tiempos_llegada = np.cumsum(tiempos_entre_llegadas)
 
+
     tiempo_libre_agente = np.zeros(n_agentes)
     inicio_atencion = np.zeros(n_llamadas)
     fin_atencion = np.zeros(n_llamadas)
