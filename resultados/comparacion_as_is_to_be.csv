@@ -1,0 +1,4 @@
+Indicador,AS-IS (4 agentes),TO-BE (5 agentes),Mejora
+Espera promedio (s),43.1703286239274,10.507663239288181,-75.7%
+% cumple SLA,82.38918226916307,94.4289753027151,+12.04 puntos
+Utilizacion simulada (%),56.91294692051767,45.53151418738047,-20.0%
