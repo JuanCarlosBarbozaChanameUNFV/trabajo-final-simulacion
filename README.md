@@ -15,12 +15,12 @@ Se construyó y validó un modelo de simulación de eventos discretos (distribuc
 
 ```
 trabajo-final-simulacion/
-├── datos/                      # Dataset real (Bangs, 2021, Kaggle)
+├── datos/                      # Dataset  (Bangs, 2021, Kaggle)
 ├── modelo/
 │   ├── simulacion_as_is.py     # Parámetros, motor, validación, escenarios
 │   ├── simulacion_to_be.py     # Barrido de agentes, propuesta de mejora
 │   └── notebook_resultados.ipynb  # Presentación de resultados y gráficos
-├── diagramas/                  # BPMN AS-IS y TO-BE (imagen + fuente .bpmn)
+├── diagramas/                  # BPMN AS-IS y TO-BE 
 ├── resultados/                 # CSV de resultados 
 ├── informe/                    # Informe técnico completo (PDF)
 └── presentacion/                # Presentación final (PPTX)
