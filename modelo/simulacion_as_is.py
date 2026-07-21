@@ -1,22 +1,12 @@
-# ======================================================
 # TRABAJO FINAL - SIMULACION DE SISTEMAS
 # SIMULACION AS-IS: parametros, motor, validacion y escenarios
-# ======================================================
-# Motor de simulacion de eventos discretos (patron de asignacion
-# de servidor con np.argmin + max, generalizado a multiples
-# agentes), calibrado con datos reales de un call center de
-# 4 agentes (dataset: Bangs, 2021, Kaggle).
-# ======================================================
+
 
 import os
 import numpy as np
 import pandas as pd
 from scipy.stats import ks_2samp
 
-# Rutas basadas en la ubicacion del propio archivo .py, no en el
-# directorio desde donde se ejecute (asi funciona igual si se corre
-# con "python simulacion_as_is.py" desde modelo/, o con el boton
-# "Run" de VS Code desde la raiz del repo, o de cualquier otro lado).
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CSV = os.path.join(SCRIPT_DIR, "..", "datos", "SimulacionCallCenter.csv")
 CARPETA_RESULTADOS = os.path.join(SCRIPT_DIR, "..", "resultados")
@@ -39,8 +29,7 @@ df["tiempo_entre_llegadas_seg"] = (
 )
 df["mes"] = df["fecha"].str[:7]
 
-# mu (tasa de servicio) se calcula con TODO el anio: se asume
-# constante en el tiempo (supuesto documentado en el informe).
+# mu (tasa de servicio) se calcula con todo el año: se asume
 MU = 1 / df["tiempo_servicio_seg"].mean()
 
 diciembre = df[df["fecha"].str.startswith("2021-12")]

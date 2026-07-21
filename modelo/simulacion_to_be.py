@@ -2,10 +2,12 @@
 # TRABAJO FINAL - SIMULACION DE SISTEMAS
 # SIMULACION TO-BE: propuesta de aumento de agentes
 # ======================================================
+
+
 # Reutiliza el mismo motor de simulacion de simulacion_as_is.py
-# (identico, sin cambios), variando unicamente el numero de
+# ,variando unicamente el numero de
 # agentes bajo la demanda de diciembre (el escenario mas
-# exigente / peor caso del anio).
+# exigente / peor caso del añoo).
 # ======================================================
 
 import os
@@ -42,7 +44,7 @@ N_LLAMADAS_DICIEMBRE = len(diciembre)
 
 
 # ------------------------------------------------------
-# 2. Motor de simulacion (identico al de simulacion_as_is.py)
+# 2. Motor de simulacion 
 # ------------------------------------------------------
 def simular_call_center(lam, mu, n_agentes, n_llamadas, semilla):
     np.random.seed(semilla)
