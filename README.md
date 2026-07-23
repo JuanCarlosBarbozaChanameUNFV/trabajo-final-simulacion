@@ -11,6 +11,8 @@ El call center registró 51,708 llamadas durante 2021. Mientras el volumen mensu
 
 Se construyó y validó un modelo de simulación de eventos discretos (distribuciones Exponenciales, motor de asignación de agentes tipo FIFO) que reproduce el comportamiento real con menos de 1 punto porcentual de diferencia en los 12 meses del año. Con el modelo validado, se determinó que **incorporar un quinto agente** durante los meses de alta demanda recupera el cumplimiento del SLA (82.39% → 94.43%) y reduce la espera promedio en 75.6%.
 
+Las columnas de  datos de Dataset fueron traducidas al español para su mejor entendimiento.
+
 ## Estructura del repositorio
 
 ```
@@ -34,7 +36,7 @@ cd modelo
 python simulacion_as_is.py
 python simulacion_to_be.py
 ```
-
+-
 ## Fuente de datos
 
 Bangs, D. (2021). *Call Centre Queue Simulation* [Conjunto de datos]. Kaggle. https://www.kaggle.com/datasets/donovanbangs/call-centre-queue-simulation
